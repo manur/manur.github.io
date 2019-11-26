@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head><meta name="generator" content="Hexo 3.9.0">
     <!-- so meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="As a side project in using Electron, a desktop application framework, I built a cross-platform clone of Minesweeper.  The original variant of the game has provided me much entertainment over the years">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[Game] Minesweeper: A cross-platform experiment">
+<meta property="og:title" content="Minesweeper: A cross-platform experiment with Electron.js">
 <meta property="og:url" content="https://manur.github.io/minesweeper/index.html">
 <meta property="og:site_name" content="Manu Raghavan">
 <meta property="og:description" content="As a side project in using Electron, a desktop application framework, I built a cross-platform clone of Minesweeper.  The original variant of the game has provided me much entertainment over the years">
@@ -16,9 +16,9 @@
 <meta property="og:image" content="https://manur.github.io/images/portfolio/minesweeper-3.png">
 <meta property="og:image" content="https://manur.github.io/images/icon-mac-app.png">
 <meta property="og:image" content="https://manur.github.io/images/icon-web-app.png">
-<meta property="og:updated_time" content="2019-03-01T10:38:48.398Z">
+<meta property="og:updated_time" content="2019-11-26T19:16:09.340Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[Game] Minesweeper: A cross-platform experiment">
+<meta name="twitter:title" content="Minesweeper: A cross-platform experiment with Electron.js">
 <meta name="twitter:description" content="As a side project in using Electron, a desktop application framework, I built a cross-platform clone of Minesweeper.  The original variant of the game has provided me much entertainment over the years">
 <meta name="twitter:image" content="https://manur.github.io/images/portfolio/minesweeper-3.png">
     
@@ -40,7 +40,7 @@
         
     
     <!-- title -->
-    <title>[Game] Minesweeper: A cross-platform experiment</title>
+    <title>Minesweeper: A cross-platform experiment with Electron.js</title>
     <!-- styles -->
     <link rel="stylesheet" href="/css/style.css">
     <!-- persian styles -->
@@ -50,6 +50,8 @@
     <!-- rss -->
     
     
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
 </head>
 
 <body class="max-width mx-auto px3 ltr">    
@@ -61,7 +63,7 @@
     <span id="nav">
       <ul>
          
-          <li><a href="/">home</a></li>
+          <li><a href="/">index</a></li>
          
           <li><a href="/archives/">blog</a></li>
          
@@ -69,7 +71,7 @@
         
       </ul>
     </span>
-    <br>
+    <br/>
     <span id="actions">
       <ul>
         
@@ -86,19 +88,19 @@
       <span id="i-top" class="info" style="display:none;">Back to top</span>
       <span id="i-share" class="info" style="display:none;">Share post</span>
     </span>
-    <br>
+    <br/>
     <div id="share" style="display: none">
       <ul>
   <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://manur.github.io/minesweeper/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=https://manur.github.io/minesweeper/&text=[Game] Minesweeper: A cross-platform experiment"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://manur.github.io/minesweeper/&title=[Game] Minesweeper: A cross-platform experiment"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://manur.github.io/minesweeper/&is_video=false&description=[Game] Minesweeper: A cross-platform experiment"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=[Game] Minesweeper: A cross-platform experiment&body=Check out this article: https://manur.github.io/minesweeper/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=https://manur.github.io/minesweeper/&title=[Game] Minesweeper: A cross-platform experiment"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=https://manur.github.io/minesweeper/&title=[Game] Minesweeper: A cross-platform experiment"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://manur.github.io/minesweeper/&title=[Game] Minesweeper: A cross-platform experiment"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=https://manur.github.io/minesweeper/&title=[Game] Minesweeper: A cross-platform experiment"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://manur.github.io/minesweeper/&name=[Game] Minesweeper: A cross-platform experiment&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://manur.github.io/minesweeper/&text=Minesweeper: A cross-platform experiment with Electron.js"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://manur.github.io/minesweeper/&title=Minesweeper: A cross-platform experiment with Electron.js"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://manur.github.io/minesweeper/&is_video=false&description=Minesweeper: A cross-platform experiment with Electron.js"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Minesweeper: A cross-platform experiment with Electron.js&body=Check out this article: https://manur.github.io/minesweeper/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://manur.github.io/minesweeper/&title=Minesweeper: A cross-platform experiment with Electron.js"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://manur.github.io/minesweeper/&title=Minesweeper: A cross-platform experiment with Electron.js"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://manur.github.io/minesweeper/&title=Minesweeper: A cross-platform experiment with Electron.js"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://manur.github.io/minesweeper/&title=Minesweeper: A cross-platform experiment with Electron.js"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://manur.github.io/minesweeper/&name=Minesweeper: A cross-platform experiment with Electron.js&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -111,17 +113,17 @@
     
     <div class="content index py4">
         
-        <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header>
     
     <h1 class="posttitle" itemprop="name headline">
-        [Game] Minesweeper: A cross-platform experiment
+        Minesweeper: A cross-platform experiment with Electron.js
     </h1>
 
 
 
     <div class="meta">
-      <span class="author" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
         <span itemprop="name">Manu Raghavan</span>
       </span>
       
@@ -131,11 +133,6 @@
 
 
       
-    <div class="article-category">
-        <i class="fas fa-archive"></i>
-        <a class="category-link" href="/categories/project/">project</a>
-    </div>
-
 
       
 
@@ -147,12 +144,22 @@
     <p>As a side project in using <a href="http://electron.atom.io" target="_blank" rel="noopener">Electron</a>, a desktop application framework, I built a cross-platform clone of Minesweeper. </p>
 <p>The original variant of the game has provided me much entertainment over the years, and I’ve become quite the reflexive player. I’ve released it a desktop app and for the web, whatever works better for you. What I’d like to do next is explore variants of the game.</p>
 <p>Feedback is welcome.</p>
-<p><img src="/images/portfolio/minesweeper-3.png"></p>
-<p><br></p>
-<h2 id="How-to-play"><a href="#How-to-play" class="headerlink" title="How to play"></a>How to play</h2><p><img src="/images/icon-mac-app.png" width="40" style="background: white; border-radius: 5px; border 1px solid transparent; padding: 5px; display: inline;"><br><a class="left" href="https://cdn.rawgit.com/manur/minesweeper/master/desktop/dist/Minesweeper-darwin-x64/Minesweeper.dmg" target="_blank" rel="noopener">Install on Mac OS</a></p>
-<p><br></p>
-<p><img src="/images/icon-web-app.png" width="40" style="background: white; border-radius: 5px; border 1px solid transparent; padding: 5px; display: inline;"><br><a href="https://rawgit.com/manur/minesweeper/master/desktop/index.html" target="_blank" rel="noopener">Play in browser</a></p>
-<p><a href="https://github.com/manur/minesweeper.git" target="_blank" rel="noopener"><br>  Source on Github (Released under the MIT License)<br></a></p>
+<img src="/images/portfolio/minesweeper-3.png">
+
+<br>
+
+<h2 id="How-to-play"><a href="#How-to-play" class="headerlink" title="How to play"></a>How to play</h2><img src="/images/icon-mac-app.png" width="40" style="background: white; border-radius: 5px; border 1px solid transparent; padding: 5px; display: inline;">
+<a class="left" href="https://cdn.rawgit.com/manur/minesweeper/master/desktop/dist/Minesweeper-darwin-x64/Minesweeper.dmg" target="_blank" rel="noopener">Install on Mac OS</a>
+
+<br>
+
+<img src="/images/icon-web-app.png" width="40" style="background: white; border-radius: 5px; border 1px solid transparent; padding: 5px; display: inline;">
+<a href="https://rawgit.com/manur/minesweeper/master/desktop/index.html" target="_blank" rel="noopener">Play in browser</a>
+
+<a href="https://github.com/manur/minesweeper.git" target="_blank" rel="noopener">
+  Source on Github (Released under the MIT License)
+</a>
+
 
   </div>
 </article>
@@ -166,7 +173,7 @@
     <div id="nav-footer" style="display: none">
       <ul>
          
-          <li><a href="/">home</a></li>
+          <li><a href="/">index</a></li>
          
           <li><a href="/archives/">blog</a></li>
          
@@ -182,15 +189,15 @@
     <div id="share-footer" style="display: none">
       <ul>
   <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://manur.github.io/minesweeper/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=https://manur.github.io/minesweeper/&text=[Game] Minesweeper: A cross-platform experiment"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://manur.github.io/minesweeper/&title=[Game] Minesweeper: A cross-platform experiment"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://manur.github.io/minesweeper/&is_video=false&description=[Game] Minesweeper: A cross-platform experiment"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=[Game] Minesweeper: A cross-platform experiment&body=Check out this article: https://manur.github.io/minesweeper/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=https://manur.github.io/minesweeper/&title=[Game] Minesweeper: A cross-platform experiment"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=https://manur.github.io/minesweeper/&title=[Game] Minesweeper: A cross-platform experiment"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://manur.github.io/minesweeper/&title=[Game] Minesweeper: A cross-platform experiment"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=https://manur.github.io/minesweeper/&title=[Game] Minesweeper: A cross-platform experiment"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://manur.github.io/minesweeper/&name=[Game] Minesweeper: A cross-platform experiment&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://manur.github.io/minesweeper/&text=Minesweeper: A cross-platform experiment with Electron.js"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://manur.github.io/minesweeper/&title=Minesweeper: A cross-platform experiment with Electron.js"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://manur.github.io/minesweeper/&is_video=false&description=Minesweeper: A cross-platform experiment with Electron.js"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Minesweeper: A cross-platform experiment with Electron.js&body=Check out this article: https://manur.github.io/minesweeper/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://manur.github.io/minesweeper/&title=Minesweeper: A cross-platform experiment with Electron.js"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://manur.github.io/minesweeper/&title=Minesweeper: A cross-platform experiment with Electron.js"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://manur.github.io/minesweeper/&title=Minesweeper: A cross-platform experiment with Electron.js"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://manur.github.io/minesweeper/&title=Minesweeper: A cross-platform experiment with Electron.js"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://manur.github.io/minesweeper/&name=Minesweeper: A cross-platform experiment with Electron.js&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -210,11 +217,12 @@
   <div class="footer-left">
     Copyright &copy; 2019 MR
   </div>
+  <!--
   <div class="footer-right">
     <nav>
       <ul>
          
-          <li><a href="/">home</a></li>
+          <li><a href="/">index</a></li>
          
           <li><a href="/archives/">blog</a></li>
          
@@ -223,6 +231,7 @@
       </ul>
     </nav>
   </div>
+  -->
 </footer>
 
     </div>
