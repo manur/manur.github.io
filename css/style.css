@@ -326,7 +326,7 @@ body .h1 {
   font-style: normal;
   font-size: 1.5em;
   font-weight: 400;
-  font-family: "Menlo", "Helvetica Neue", Helvetica, monospace;
+  font-family: "Lobster", "Helvetica Neue", Helvetica, monospace;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
@@ -341,7 +341,7 @@ body .h2 {
   letter-spacing: normal;
   font-weight: normal;
   font-size: 1.5rem;
-  font-family: "Menlo", "Helvetica Neue", Helvetica, monospace;
+  font-family: "Lobster", "Helvetica Neue", Helvetica, monospace;
 }
 body h3 {
   color: #757575;
@@ -585,7 +585,7 @@ figure {
   font-style: normal;
   font-size: 2.5rem;
   line-height: 3rem;
-  font-family: "Menlo", "Helvetica Neue", Helvetica, monospace;
+  font-family: "Lobster", "Helvetica Neue", Helvetica, monospace;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
@@ -612,7 +612,7 @@ figure {
   font-weight: 200;
   font-style: normal;
   font-size: 1.2rem;
-  font-family: "Menlo", "Helvetica Neue", Helvetica, monospace;
+  font-family: "Lobster", "Helvetica Neue", Helvetica, monospace;
 }
 #header #nav ul {
   margin: 0;
@@ -766,7 +766,7 @@ figure {
 #header-post #nav ul a {
   margin-right: 15px;
   color: #2bbc8a;
-  font-family: "Menlo", "Helvetica Neue", Helvetica, monospace;
+  font-family: "Lobster", "Helvetica Neue", Helvetica, monospace;
 }
 #header-post #nav ul a:hover {
   background-image: linear-gradient(transparent, transparent 5px, #2bbc8a 5px, #2bbc8a);
@@ -1237,7 +1237,7 @@ article .content .caption {
   vertical-align: top;
   text-align: center;
   font-size: 1rem;
-  font-family: "Menlo", "Helvetica Neue", Helvetica, monospace;
+  font-family: "Lobster", "Helvetica Neue", Helvetica, monospace;
 }
 #footer ul {
   margin: 0;
