@@ -147,17 +147,38 @@
 <p>By learning to write basic “functions” – groups of programming instructions –<br>you’ll learn how different abstractions of instructions can be used for high<br>and low-level instructions to computers.</p>
 <p>Start by entering a simple number at the prompt, and observe that<br>the value is printed back to the console. This doesn’t do much to the computer,<br>it doesn’t store “5” in anywhere permanent; it simply shows you the interactivity at<br>your control today.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; 5</span><br></pre></td></tr></table></figure>
-<p>The other type of data commonly used is text, which you can enter<br>within quotation marks to let the computer understand it as raw text, which is data, and not as “code” or instructions for it to try doing anything with:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; &quot;The quick brown fox&quot;</span><br></pre></td></tr></table></figure></p>
-<p>Next, try printing some text using the ‘print’ command.<br>Commands are issued within parentheses, like so:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; (print &quot;Hello world&quot;)</span><br></pre></td></tr></table></figure></p>
+
+<p>The other type of data commonly used is text, which you can enter<br>within quotation marks to let the computer understand it as raw text, which is data, and not as “code” or instructions for it to try doing anything with:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; &quot;The quick brown fox&quot;</span><br></pre></td></tr></table></figure>
+
+<p>Next, try printing some text using the ‘print’ command.<br>Commands are issued within parentheses, like so:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; (print &quot;Hello world&quot;)</span><br></pre></td></tr></table></figure>
+
 <p>Note that the word ‘print’ is separate from the words ‘Hello World’ in how the computer<br>expects to treat them. print and () are code, while “Hello World” is data.</p>
-<p>Basic arithmetic can be applied in interesting ways on numbers as well as on text:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; (- 5 3)</span><br><span class="line">&gt; (+ &quot;Hello&quot; &quot;World&quot;)</span><br></pre></td></tr></table></figure></p>
-<p>Each of the operations from the preious step returns a value,<br>that can be used to create compound expressions:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; (+ (- 3 5) 17)</span><br><span class="line">&gt; (+ &quot;Manu&quot; &quot; &quot; &quot;was&quot; &quot; &quot; &quot;here.&quot;)</span><br></pre></td></tr></table></figure></p>
-<p>You can create intermediate values and save it to memory for reference at a future point.<br>Here’s how you can get that value:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; (set name &quot;Manu&quot;)</span><br></pre></td></tr></table></figure></p>
-<p>Once saved to memory, it will last as long as your program does.<br>Try retrieving the value you saved using the ‘get’ command:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; (get name)</span><br></pre></td></tr></table></figure></p>
-<p>Likewise, you can find the coordinates of the dot on the map by<br>retrieving the values ‘x’ and ‘y’:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; (get x)</span><br><span class="line">&gt; (get y)</span><br></pre></td></tr></table></figure></p>
-<p>To move the line of motion for the dot, try setting its ‘x’ value to<br>an arbitrary coordinate:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; (set x 200)</span><br></pre></td></tr></table></figure></p>
-<p>Likewise, you can set the direction of movement by setting the variable ‘direction’.<br>{0,1,2,3} map to {“Go north”, “Go east”, “Go south”, “Go west”} for this program<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; (set direction 2)</span><br></pre></td></tr></table></figure></p>
-<p>Finally, we will try to define ‘functions’ or mini-programs to do this for us using the ‘defun’ method<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; (defun north() (set direction 0))</span><br><span class="line">&gt; (defun east() (set direction 1))</span><br></pre></td></tr></table></figure></p>
+<p>Basic arithmetic can be applied in interesting ways on numbers as well as on text:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; (- 5 3)</span><br><span class="line">&gt; (+ &quot;Hello&quot; &quot;World&quot;)</span><br></pre></td></tr></table></figure>
+
+<p>Each of the operations from the preious step returns a value,<br>that can be used to create compound expressions:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; (+ (- 3 5) 17)</span><br><span class="line">&gt; (+ &quot;Manu&quot; &quot; &quot; &quot;was&quot; &quot; &quot; &quot;here.&quot;)</span><br></pre></td></tr></table></figure>
+
+<p>You can create intermediate values and save it to memory for reference at a future point.<br>Here’s how you can get that value:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; (set name &quot;Manu&quot;)</span><br></pre></td></tr></table></figure>
+
+<p>Once saved to memory, it will last as long as your program does.<br>Try retrieving the value you saved using the ‘get’ command:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; (get name)</span><br></pre></td></tr></table></figure>
+
+<p>Likewise, you can find the coordinates of the dot on the map by<br>retrieving the values ‘x’ and ‘y’: </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; (get x)</span><br><span class="line">&gt; (get y)</span><br></pre></td></tr></table></figure>
+
+<p>To move the line of motion for the dot, try setting its ‘x’ value to<br>an arbitrary coordinate:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; (set x 200)</span><br></pre></td></tr></table></figure>
+
+<p>Likewise, you can set the direction of movement by setting the variable ‘direction’.<br>{0,1,2,3} map to {“Go north”, “Go east”, “Go south”, “Go west”} for this program</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; (set direction 2)</span><br></pre></td></tr></table></figure>
+
+<p>Finally, we will try to define ‘functions’ or mini-programs to do this for us using the ‘defun’ method</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; (defun north() (set direction 0))</span><br><span class="line">&gt; (defun east() (set direction 1))</span><br></pre></td></tr></table></figure>
+
 <p>Try doing the same for west and south.<br>Test your results by moving arrow keys after clicking on the map.</p>
 
   </div>
