@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Reverse Minesweeper is a variant on the original game. The objective is the same as in the original, mark all mines and don’t click on any. But, there’s a twist – all the boxes are open; mines and ope">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Game: Reverse Minesweeper, a variant on an old game">
+<meta property="og:url" content="https://manur.github.io/reverse-minesweeper/index.html">
+<meta property="og:site_name" content="Manu Raghavan">
+<meta property="og:description" content="Reverse Minesweeper is a variant on the original game. The objective is the same as in the original, mark all mines and don’t click on any. But, there’s a twist – all the boxes are open; mines and ope">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://manur.github.io/images/icons/reverse-minesweeper/icon.png">
+<meta property="og:image" content="https://manur.github.io/images/icon-github.png">
+<meta property="og:image" content="https://manur.github.io/images/portfolio/reverse-minesweeper-1.png">
+<meta property="og:updated_time" content="2019-11-27T08:41:14.109Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Game: Reverse Minesweeper, a variant on an old game">
+<meta name="twitter:description" content="Reverse Minesweeper is a variant on the original game. The objective is the same as in the original, mark all mines and don’t click on any. But, there’s a twist – all the boxes are open; mines and ope">
+<meta name="twitter:image" content="https://manur.github.io/images/icons/reverse-minesweeper/icon.png">
+    
+    
+    <!-- title -->
+    <title>Game: Reverse Minesweeper, a variant on an old game</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<body class="max-width mx-auto px3 ltr">    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">home</a></li>
+         
+          <li><a href="/archives/">blog</a></li>
+         
+          <li><a href="/about">about</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/urban-trivia/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/minesweeper-app/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://manur.github.io/reverse-minesweeper/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://manur.github.io/reverse-minesweeper/&text=Game: Reverse Minesweeper, a variant on an old game"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://manur.github.io/reverse-minesweeper/&title=Game: Reverse Minesweeper, a variant on an old game"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://manur.github.io/reverse-minesweeper/&is_video=false&description=Game: Reverse Minesweeper, a variant on an old game"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Game: Reverse Minesweeper, a variant on an old game&body=Check out this article: https://manur.github.io/reverse-minesweeper/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://manur.github.io/reverse-minesweeper/&title=Game: Reverse Minesweeper, a variant on an old game"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://manur.github.io/reverse-minesweeper/&title=Game: Reverse Minesweeper, a variant on an old game"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://manur.github.io/reverse-minesweeper/&title=Game: Reverse Minesweeper, a variant on an old game"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://manur.github.io/reverse-minesweeper/&title=Game: Reverse Minesweeper, a variant on an old game"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://manur.github.io/reverse-minesweeper/&name=Game: Reverse Minesweeper, a variant on an old game&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Play"><span class="toc-number">1.</span> <span class="toc-text">Play</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Game: Reverse Minesweeper, a variant on an old game
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Manu Raghavan</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2016-06-01T22:42:00.000Z" itemprop="datePublished">2016-06-02</time>
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>Reverse Minesweeper is a variant on the <a href="/minesweeper">original game</a>.</p>
+<p>The objective is the same as in the original, <em>mark all mines and don’t click on any</em>. But, there’s a twist – all the boxes are open; mines and open spaces look alike. Mark all mines to finish the game.</p>
+<h2 id="Play"><a href="#Play" class="headerlink" title="Play"></a>Play</h2><ul class="project-list">
+<li class="project-item">
+<a href="https://manur.github.io/minesweeper/desktop/reverse.html">
+<img src="/images/icons/reverse-minesweeper/icon.png" style="max-width: 120px">
+Play in browser
+</a>
+</li>
+
+<li class="project-item">
+<a href="https://github.com/manur/minesweeper.git" target="_blank" rel="noopener">
+<img src="/images/icon-github.png" style="max-width: 120px">
+Fork on Github
+</a>
+</li>
+</ul>
+
+<img src="/images/portfolio/reverse-minesweeper-1.png">
+
+<div style="overflow:hidden;"></div>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">home</a></li>
+         
+          <li><a href="/archives/">blog</a></li>
+         
+          <li><a href="/about">about</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Play"><span class="toc-number">1.</span> <span class="toc-text">Play</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://manur.github.io/reverse-minesweeper/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://manur.github.io/reverse-minesweeper/&text=Game: Reverse Minesweeper, a variant on an old game"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://manur.github.io/reverse-minesweeper/&title=Game: Reverse Minesweeper, a variant on an old game"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://manur.github.io/reverse-minesweeper/&is_video=false&description=Game: Reverse Minesweeper, a variant on an old game"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Game: Reverse Minesweeper, a variant on an old game&body=Check out this article: https://manur.github.io/reverse-minesweeper/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://manur.github.io/reverse-minesweeper/&title=Game: Reverse Minesweeper, a variant on an old game"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://manur.github.io/reverse-minesweeper/&title=Game: Reverse Minesweeper, a variant on an old game"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://manur.github.io/reverse-minesweeper/&title=Game: Reverse Minesweeper, a variant on an old game"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://manur.github.io/reverse-minesweeper/&title=Game: Reverse Minesweeper, a variant on an old game"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://manur.github.io/reverse-minesweeper/&name=Game: Reverse Minesweeper, a variant on an old game&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    copyright &copy; 2021 Manu Raghavan
+  </div>
+  <!--
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">home</a></li>
+         
+          <li><a href="/archives/">blog</a></li>
+         
+          <li><a href="/about">about</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+  -->
+</footer>
+
+    </div>
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+
