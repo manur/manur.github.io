@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /mrres.txt
-Disallow: /resume.txt
-Disallow: /res.txt
-Disallow: /resume
